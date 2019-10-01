@@ -1,4 +1,4 @@
-package edu.learn.didemo.services;
+package edu.services;
 
 public interface GreetingService {
     String sayGreeting();

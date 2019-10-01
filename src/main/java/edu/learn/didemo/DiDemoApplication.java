@@ -9,8 +9,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"edu.services","edu.learn.didemo"})
 public class DiDemoApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(DiDemoApplication.class);

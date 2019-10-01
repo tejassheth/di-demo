@@ -1,4 +1,4 @@
-package edu.learn.didemo.services;
+package edu.services;
 
 import org.springframework.stereotype.Service;
 
