@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Primary
 @Profile("es")
-public class PrimarySpenisGreetingService implements  GreetingService{
+public class PrimarySpenishGreetingService implements  GreetingService{
 
 
     @Override
