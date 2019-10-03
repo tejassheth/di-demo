@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 public class MyController {
     Logger logger = LoggerFactory.getLogger(MyController.class);
 
+
     private GreetingService greetingService;
 
     public MyController(GreetingService greetingService) {

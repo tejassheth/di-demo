@@ -1,28 +1,22 @@
 package edu.learn.didemo;
 
-import edu.learn.didemo.controller.ConstructorInjectedController;
 import edu.learn.didemo.controller.MyController;
-import edu.learn.didemo.controller.PropertyInjectedController;
-import edu.learn.didemo.controller.SetterInjectedController;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import edu.learn.didemo.examplebean.FakeDataSource;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
+@Slf4j
 public class DiDemoApplication {
 
-	private static Logger logger = LoggerFactory.getLogger(DiDemoApplication.class);
 	public static void main(String[] args) {
 		ApplicationContext ctx= SpringApplication.run(DiDemoApplication.class, args);
 		MyController controller= (MyController) ctx.getBean("myController");
+		FakeDataSource fakeDataSource=(FakeDataSource) ctx.getBean(FakeDataSource.class);
+		log.info(fakeDataSource.toString());
 
-		logger.info(controller.hello());
-
-		logger.info(ctx.getBean(PropertyInjectedController.class).sayHello());
-		logger.info(ctx.getBean(SetterInjectedController.class).sayHello());
-		logger.info(ctx.getBean(ConstructorInjectedController.class).sayHello());
 	}
 
 
