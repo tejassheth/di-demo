@@ -22,7 +22,7 @@ public class PropertyConfig {
     @Bean
     public FakeDataSource fakeDataSource(){
         FakeDataSource fakeDataSource= new FakeDataSource();
-        fakeDataSource.setPassword(password);
+        fakeDataSource.setUsername(username);
         fakeDataSource.setURL(URL);
         fakeDataSource.setPassword(password);
         return  fakeDataSource;
