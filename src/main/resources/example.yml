@@ -1,0 +1,38 @@
+#this is a comment
+
+name:Tejas
+
+names: #comment
+    -Tejas
+    -Dhyani
+    -Jiya
+    -Radhika
+
+pound_sign: "#"
+
+book:
+    author: Kavi Kalidash
+    publisher: Tejas Publication
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "This is it's quote"
+
+colon_string: "my courses : one two three"
+
+include_new_lines: |
+  asdf asdf asdf
+  asdf asdf asdf
+  adafg sdfsfh
+  ad dfsfgfdh hsfg
+
+ignore_new_lines: >
+  this is
+  just a one long
+  string
